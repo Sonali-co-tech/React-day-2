@@ -1,0 +1,293 @@
+.assignment-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.hero {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.28);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  opacity: 0.82;
+}
+
+.hero h1 {
+  margin: 10px 0 12px;
+  font-size: clamp(1.8rem, 2.4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.hero-copy {
+  margin: 0;
+  max-width: 720px;
+  color: #e2e8f0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #dbe4ef;
+  backdrop-filter: blur(2px);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+}
+
+.section-note {
+  margin: 0 0 14px;
+  color: #475569;
+}
+
+code {
+  background-color: #e2e8f0;
+  padding: 1px 6px;
+  border-radius: 6px;
+  color: #0f172a;
+  margin-inline: 2px;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.user-profile-card {
+  border: 1px solid #dbe4ef;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.user-profile-card p {
+  margin: 6px 0 0;
+}
+
+.user-profile-card span {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.admin {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.member {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.switch-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switch-panel {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.switch-panel.on {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.switch-panel.off {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.counter-wrap {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.counter-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #0f172a;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #f8fafc;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: 2px solid #38bdf8;
+  border-color: #38bdf8;
+}
+
+.search-output {
+  margin: 0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px dashed #94a3b8;
+  padding: 12px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.condition-block {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+}
+
+.condition-block p {
+  margin: 0 0 8px;
+}
+
+.render-demo {
+  margin: 0 0 10px;
+}
+
+.check-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.check-row input {
+  width: auto;
+  margin: 0;
+}
+
+.secret-message {
+  margin-top: 10px;
+  background: #ecfeff;
+  color: #155e75;
+  border: 1px solid #a5f3fc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+}
+
+.ghost-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.form-grid button {
+  margin-top: 8px;
+  width: fit-content;
+}
+
+@media (max-width: 640px) {
+  #root {
+    padding: 20px 12px;
+  }
+
+  .hero,
+  .card {
+    padding: 18px;
+  }
+
+  .switch-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .todo-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
